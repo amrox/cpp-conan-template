@@ -14,4 +14,6 @@ script_dir="$(cd "$(dirname "$script")"; pwd)"
 #
 export SRCROOT="${script_dir}"
 export CONAN_USER_HOME="${SRCROOT}"
+"${SRCROOT}"/conanw --cw-check
+export PATH=$(./conanw --cw-dir):$PATH
 conan config install --type dir "${SRCROOT}/extras/conan_settings"
