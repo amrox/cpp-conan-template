@@ -34,3 +34,4 @@
 # Project
 .conanw-venv/
 .conan/
+build*/
