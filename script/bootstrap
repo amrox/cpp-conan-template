@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+"${SRCROOT}"/conanw --cw-check
+export PATH=$(./conanw --cw-dir):$PATH
+conan config install --type dir "${SRCROOT}/extras/conan_settings"
