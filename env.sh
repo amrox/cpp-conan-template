@@ -14,3 +14,4 @@ script_dir="$(cd "$(dirname "$script")"; pwd)"
 #
 export SRCROOT="${script_dir}"
 export CONAN_USER_HOME="${SRCROOT}"
+export PATH=$(./conanw --cw-dir):$PATH
